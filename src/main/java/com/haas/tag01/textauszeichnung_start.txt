@@ -1,0 +1,33 @@
+Zeilenumbrüche werden im HTML-Markup ignoriert, aber bestimmte tags bringen einen Zeilenumbruch mit. Dazu gehören die tags: h1-h6 und p (Absatz). Mehr als ein Leerzeichen wird vom browser ignoriert.
+Das p-tag erzeugt einen Absatz und einen Abstand nach oben und unten.
+
+Zeilenumbruch (br) 
+Das br-Element (break, englisch für Unterbrechung) repräsentiert einen logischen Bruch innerhalb eines Textes. Visuell wird standardmäßig ein Zeilenumbruch gesetzt. 
+
+Horizontale Linie 
+Das tag hr erzeugt eine horizontale Linie, die über die gesamte Breite des Browserfensters geht. br ist ein stand-alone-tag, es gibt kein end-Tag.
+
+Betont (em) 
+Mit dem Element em wird ein Teil eines Fließtextes als betont (engl. emphasized) ausgezeichnet.
+
+Stark betont (strong) 
+Mit dem Element strong wird ein Teil eines Fließtextes als stark betont (engl. strongly emphasized) ausgezeichnet.
+
+Abkürzung (abbr) 
+Das Element abbr zeichnet einen Teil eines Fließtextes als Abkürzung, eng. abbreviation aus. Wenn die ausgeschriebene Langform im title-Attribut enthalten ist, wird sie bei :hover als Tooltip angezeigt.
+
+Das tag blockquote ist für Zitate vorgesehen.
+Steve Jobs sagte: Es ist wirklich schwer, Produkte für Zielgruppen zu entwickeln. Sehr oft wissen die Menschen gar nicht was sie wollen - bis du es ihnen gezeigt hast.
+
+Hochstellen (sup) 
+Mit dem Element sup wird ein Teil eines Fließtextes hochgestellt (eng. superscript). 
+
+Tiefstellen (sub) 
+Mit dem Element sub wird ein Teil eines Fließtextes tiefgestellt (eng. subscript).
+
+
+Später
+
+span 
+Das span-Element (engl span für überspannen) ist ein Element, das Text und andere Inline-Elemente enthalten kann, selbst aber keine semantische Bedeutung hat und nichts bewirkt. Es ist dazu gedacht, um mit Hilfe von CSS formatiert zu werden. 
+span starttag leitet einen allgemeinen Inline-Bereich ein. span endtag beendet diesen Bereich.
