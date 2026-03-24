@@ -1,0 +1,54 @@
+HTML5 header ist für die Einleitung des Inhalts gedacht und wird i.d.R. die typischen Kopf-Elemente wie Überschriften, Logo und Autor enthalten.
+Auch die Navigation kann im header enthalten  sein.
+    
+hier kommt die Hauptnavigation hin
+Das nav-Tag ist für Links zu anderen Seiten und zu Bereichen innerhalb derselben Seite reserviert. Das nav-Element soll nur für die Haupt-Navigation der Seite benutzt werden und nicht für beiläufige Links einer Seite.
+    
+Das main-Tag stellt den Hauptinhalt der Seite dar und soll nur einmal innerhalb einer Seite eingesetzt werden. Viele Webseiten benutzen einen Wrapper, meist einen div-container.
+Das HTML5-Tag main kann diese Konstruktion ersetzen. Im main können mehrere sections und articles enthalten sein, die den Inhalt strukturieren.
+
+Artikel: Politik
+1. section
+Mit Sicherheit viel Kritik - Widerstand gegen "Sicherheitspaket"
+
+Nicht nur in der Union gibt es Kritik am "Sicherheitspaket" der Ampel. Auch bei SPD und Grünen ist mit Gegenstimmen zu rechnen. Kanzler Scholz mahnte zu Disziplin. Der Juso-Chef sieht darin einen Einschüchterungsversuch.
+
+Der Innenausschuss des Bundestags befasst sich heute mit den Änderungen am sogenannten Sicherheitspaket der Bundesregierung. Die Koalitionsfraktionen hatten sich am Freitag auf Änderungen an den Gesetzentwürfen verständigt, die nun im Ausschuss abgestimmt werden sollen. Ende der Woche sollen dann Bundestag und Bundesrat das "Sicherheitspaket" verabschieden.
+
+Nein-Stimmen in SPD-Fraktion
+
+Doch dabei muss die Ampelkoalition mit zahlreichen Abweichlern in den eigenen Reihen rechnen: Bei einer Probeabstimmung der von Rolf Mützenich geführten SPD-Fraktion votierten etwa 20 bis 25 der 207 Abgeordneten dagegen, wie Teilnehmer danach am Dienstagabend berichteten. Die Mehrheit dürfte damit allein kaum gefährdet sein, allerdings gibt es auch beim grünen Koalitionspartner erhebliche Vorbehalte. Die Union als größte Oppositionspartei hat bereits angekündigt, geschlossen dagegen zu stimmen. Ihr gehen die Maßnahmen nicht weit genug.
+
+2. section
+Finanzämter warnen vor falschen Steuerbescheiden
+
+Mehrere Bundesländer warnen vor einer neuen Betrugsmasche mit gefälschten Steuerbescheiden. Kriminelle schicken diese per Post und fordern zu Steuernachzahlungen auf. Doch der Betrug lässt sich leicht erkennen. In mehreren Bundesländern warnen die jeweiligen Landesämter für Finanzen vor gefälschten Steuerbescheiden. Empfänger würden darin aufgefordert, kurzfristig Einkommenssteuer nachzuzahlen, teilten die Behörden unter anderem aus Sachsen, Sachsen-Anhalt, Thüringen, Niedersachsen, Bremen, Rheinland-Pfalz und dem Saarland mit.
+
+Die Betrüger versenden die gefälschten Bescheide per Post, fordern Steuernachzahlung per Überweisung und versuchen sich so Geld zu ergaunern. "Bitte seien Sie wachsam, wenn Sie nicht mit einem Steuerbescheid rechnen und einen derartigen Brief erhalten", warnt etwa das Landesamt in Hannover.
+
+Falsche Absender oder Telefonnummern
+
+Als Absender werden demnach die jeweiligen Finanzämter mit unzutreffender Anschrift oder die "Finanzbehörden der Bundesrepublik Deutschland" angegeben. Doch die Bezeichnung "Finanzbehörden der Bundesrepublik Deutschland" gebe es gar nicht, schreibt das Landesamt für Steuern und Finanzen in Sachsen.
+
+Auffällig sind in den gefälschten Bescheiden demnach auch die angegebenen Telefon- und Faxnummern, die nicht zum Ort passen. Die zuständige Behörde in Rheinland-Pfalz rät: "Es empfiehlt sich zum Beispiel, die Steuernummern, die Angaben zum Finanzamt oder die äußere Aufmachung des Bescheids mit vorherigen Bescheiden zu vergleichen."
+
+Artikel Sport
+1. section
+Tuchel wird England-Coach
+
+Thomas Tuchel wird neuer Trainer der englischen Fußball-Nationalmannschaft. Dies gab der englische Verband FA am Mittwoch (16.10.2024) bekannt. Bei der Pressekonferenz sprach Tuchel davon, dass es sehr aufregend sei. "Ich freue mich darauf. Ich bin Feuer und Flamme, mit diesen Spielern zu arbeiten", sagte Tuchel.
+
+Der Vertrag des 51-Jährigen mit der FA beginnt am 1. Januar 2025 und soll zunächst bis einschließlich der WM 2026 gelten. Wie in München und Chelsea wird der Engländer Anthony Barry sein Assistent. Der Vertrag sei bereits am 8. Oktober unterschrieben worden. Zunächst hatte die "Times" am Dienstagabend von der Einigung berichtet.
+
+Tuchel wird der erste deutsche Teammanager der Three Lions und der dritte Ausländer auf dem Posten nach Sven-Göran Eriksson (2001 bis 2006) und Fabio Capello (2007 bis 2012). Der englische Verband hatte seit dem Rücktritt von Gareth Southgate nach der EM-Finalniederlage im Juli gegen Spanien einen neuen Cheftrainer gesucht. Zuletzt betreute der ehemalige U21-Coach Lee Carsley interimsmäßig das Team.
+
+aside: kann Zusatzinformationen wie Kommentare aus der Presse, weitere Links, Tabellen enthalten
+
+2. section
+Handball-Champions-League - SC Magdeburg gegen HBC Nantes unter Druck
+
+ Keine Zeit zum Durchatmen: Nach dem Topspiel gegen Flensburg und vor dem Ost-Duell gegen Leipzig muss der SC Magdeburg am Mittwoch (16. Oktober 2024) in der Champions League ran. Dort wartet der französische Pokalsieger. SPORT IM OSTEN überträgt die Partie ab 20:45 Uhr im Audiostream und bietet dazu einen Liveticker an.
+
+Bloß kein Spannungsabfall jetzt: Beim SC Magdeburg geht es weiter Schlag auf Schlag mit den wichtigen Spielen, in der "Königsklasse" empfangen die Sachsen-Anhalter den HBC Nantes. Für das Team von Bennet Wiegert geht es gegen die Franzosen darum, nicht schon früh in der Saison den Anschluss an die Spitze der Gruppe B zu verlieren.
+
+ HTML footer. Wie der Name schon sagt: Enthält die Informationen im Fußbereich der Seite. Neben wichtigen Links wie Impressum und Datenschutz, die im Footer oft wiederholt werden, ist das Footer-Element ein guter Platz für Kontaktdaten und Infos zum Autor.
