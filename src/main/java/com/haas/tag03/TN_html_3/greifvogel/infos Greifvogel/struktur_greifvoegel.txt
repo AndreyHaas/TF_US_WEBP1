@@ -1,0 +1,87 @@
+Tags für anker-onePage.html
+
+header
+	h1	Greifvögel und Eulen
+	nav	für navigation
+		6 x anker-tag
+	
+header Ende
+------------------------------------------------------------------------
+main 
+
+article 1
+	h2	Jäger der Nacht	
+
+	section 1
+		h3 	Europäischer Uhu
+
+		figure
+		img               eurasian-eagle-owl-1642795_450px.jpg
+		figcaption
+
+		p	texte_greifvoegel.txt (ca. 300 Wörter)
+
+hr 
+------------------------------------------------------------------------
+	section 2
+		h3 	Schleiereule
+
+		figure
+		img          barn-owl-1107397_450px.jpg
+		figcaption
+
+		p	texte_greifvoegel.txt
+hr 
+------------------------------------------------------------------------
+	section 3
+
+		h3 	Steinkauz
+
+		figure
+		img           little-owl-5530167_450.jpg
+		figcaption
+
+		p	texte_greifvoegel.txt
+--------------------------------------------------------------------
+article 2
+	h2	Könige der Lüfte
+	
+	section 4
+		h3 	Sakerfalke
+
+		figure
+		img                   saker-falcon-2532395_450px.jpg
+		figcaption
+
+		p	texte_greifvoegel.txt
+hr 
+--------------------------------------------------------------------
+	section 5
+
+		h3 	Blaubussard
+
+		figure
+		img	aguja-3397321_450px.jpg
+		figcaption
+
+		p	texte_greifvoegel.txt
+hr 
+--------------------------------------------------------------------
+	section 6
+
+		h3 	Weißkopfseeadler
+
+		figure
+		img                    seeadler_450px.jpg
+		figcaption
+
+		p	texte_greifvoegel.docx 
+hr 
+--------------------------------------------------------------------
+main Ende
+
+
+
+
+
+
