@@ -1,0 +1,3 @@
+https://wiki.selfhtml.org/wiki/Bilder_im_Internet
+https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML
+https://www.mediaevent.de/css/margin.html

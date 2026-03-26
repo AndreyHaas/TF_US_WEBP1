@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* Allgemeine Angaben für das Hotel Parador */
+
+body {
+  /* das margin des browsers, 8px am Rand, wird  überschrieben */
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #1e5799;
+}
+#logo {
+  width: 200px;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}

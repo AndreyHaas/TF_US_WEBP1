@@ -15,7 +15,9 @@
 
         body {
             font-family: 'Georgia', 'Times New Roman', Times, serif;
-            line-height: 1.6;
+            line-height: 1.5;
+            margin: auto;
+            max-width: 1200px;
             color: #2c2c2c;
             background-color: #f9f7f3;
             padding: 20px;
@@ -24,7 +26,7 @@
         .voegel {
             max-width: 1200px;
             margin: 0 auto;
-            background-color: white;
+            background-color: gray;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             overflow: hidden;
@@ -52,6 +54,11 @@
             gap: 0.5rem;
         }
 
+        a   {
+            color: dimgray;
+            font-size: 14px;
+        }
+
         nav a {
             color: white;
             text-decoration: none;
@@ -73,10 +80,14 @@
 
         h2 {
             color: #2d5a2c;
-            border-left: 5px solid #5a9e4b;
+            /*border-left: 5px solid #5a9e4b;*/
             padding-left: 1rem;
             margin: 2rem 0 1.5rem 0;
             font-size: 1.8rem;
+        }
+
+        h1{
+            font-weight: bold;
         }
 
         h3 {
@@ -98,7 +109,7 @@
         figure {
             float: right;
             margin: 0 0 1rem 1.5rem;
-            max-width: 300px;
+            max-width: 500px;
             background: white;
             padding: 0.5rem;
             border-radius: 12px;
@@ -113,7 +124,7 @@
         }
 
         figcaption {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             color: #666;
             text-align: center;
             margin-top: 0.5rem;
@@ -122,7 +133,7 @@
 
         p {
             margin-bottom: 1rem;
-            text-align: center;
+            text-align: left;
         }
 
         .top-link {
@@ -170,16 +181,9 @@
     </nav>
 
     <main>
-        <!-- Über Greifvögel – neuer Abschnitt -->
-        <section id="ueber">
-            <h2> Die Welt der Greifvögel</h2>
-            <p>Greifvögel und Eulen zählen zu den faszinierendsten Vogelgruppen unserer Heimat. Sie sind spezialisierte Jäger mit scharfen Krallen (Fängen), einem kräftigen, gebogenen Schnabel und hervorragenden Sinnen. Während Greifvögel überwiegend tagaktiv sind, haben sich Eulen als perfekte Jäger der Nacht entwickelt. Beide Gruppen spielen eine entscheidende Rolle im ökologischen Gleichgewicht, indem sie Nagetierpopulationen regulieren und schwache Beutetiere aus dem Bestand nehmen.</p>
-        </section>
-
         <!-- Eulen (Nachtjäger) -->
         <section aria-label="Eulen - Jäger der Nacht">
-            <h2>🌙 Jäger der Nacht – Eulen</h2>
-            
+            <h2>🌙 Jäger der Nacht</h2>
             <article>
                 <section id="bubo_bubo">
                     <h3> Europäischer Uhu <em>(Bubo bubo)</em></h3>

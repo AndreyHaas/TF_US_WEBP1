@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSS Boxmodell</title>
+    <style>
+      .coral {
+        background-color: coral;
+        width: 500px;
+        /* Innenabstand: vom Element zum Rand der Box */
+        padding: 40px 20px;
+        /* 2 Werte für oben/unten und links/rechts */
+        border: 5px solid #c4c3c3;
+        margin-bottom: 50px;
+      }
+      .blau {
+        background-color: aqua;
+        width: 500px;
+        padding: 40px 20px;
+        border: 5px solid #c4c3c3;
+        margin-top: 50px;
+        /* die box darf mit dieser Angabe nicht wachsen. padding und border legen sich nach innen.  */
+        box-sizing: border-box;
+      }
+      /* die class wird mit einem Punkt und dem Klassennamen angesprochen. Eine class kann mehrfach im HTML Dokument verwendet werden. */
+    </style>
+  </head>
+
+  <body>
+    <h1>Zwei div-Container untereinander</h1>
+    <div class="coral">
+      Jedes HTML-Element – gleich ob body, div, p, table, a oder span – wird im Box-Modell als rechteckige Box betrachtet. Das Box-Modell mit padding, border
+      und margin ist die Grundlage für das grafische Layout und die Berechnung der Breite und Höhe von Elementen mit CSS. Die einfache Angabe der Breite allein
+      reicht allerdings nicht, um den Raum für ein Layout-Element zu berechnen.
+    </div>
+
+    <div class="blau">
+      Jedes Block-Element (div, p, table, …) dehnt sich über die gesamte Breite der umfassenden Box aus, wenn width für das Element nicht angegeben ist.
+      Inline-Elemente wie a, span und strong nehmen innerhalb der umfassenden Box genau den Platz für ihren Inhalt ein. Ein div-container ist eine Box für
+      Inhalte und hat keine eigenen Eigenschaften. Div-container werden fürs Layout verwendet.
+    </div>
+
+    <div>
+      <p>
+        Jedes Block-Element (div, p, table, …) dehnt sich über die gesamte Breite der umfassenden Box aus, wenn width für das Element nicht angegeben ist.
+        Inline-Elemente wie a, span und strong nehmen innerhalb der umfassenden Box genau den Platz für ihren Inhalt ein. Ein div-container ist eine Box für
+        Inhalte und hat keine eigenen Eigenschaften. Div-container werden fürs Layout verwendet.
+      </p>
+    </div>
+    <img src="./werte_angeben.png" alt="Kurzschreibweise boxmodell" />
+  </body>
+</html>
