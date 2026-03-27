@@ -1,0 +1,32 @@
+h1	Träumen mit Aussicht
+
+
+figure	mit 3 Zimmerbildern 
+	img (ohne figcaption)
+
+h2	Mit allen Annehmlichkeiten und dem Komfort, den Sie brauchen.
+	
+h3	Doppelzimmer Standard
+
+p
+Gesamtanzahl der Räume in diesem Zimmertyp: 1, Babybett: ohne Gebühr, Anfrage nicht notwendig, Reservierung notwendig, Klimaanlage: zentral gesteuert, Safe: ohne Gebühr, Deckenventilator, Minibar: gegen Gebühr, Telefon, Fernseher: deutsches Programm, Sat-TV, Badewanne oder Dusche, WC, Föhn.
+
+h3	Doppelzimmer mit Balkon und Meerblick
+
+p
+Meerblick, Gesamtanzahl der Räume in diesem Zimmertyp: 1, Babybett: ohne Gebühr, Anfrage nicht notwendig, Reservierung notwendig, Klimaanlage: zentral gesteuert, Safe: ohne Gebühr, Deckenventilator, Minibar: gegen Gebühr, Telefon, Fernseher: deutsches Programm, Sat-TV, Roomservice, Badewanne oder Dusche, WC, Föhn, Balkon: mit Sitzgelegenheit.
+
+h3	Doppelzimmer Superior
+
+p
+Unsere besonderen Zimmer mit mehr Komfort und eigener Terrasse. Die Zimmer bieten bei einer Fläche von 32 m2 viel Bewegungsfreiheit. Terrasse: mit Sitzgelegenheit. Minibar, Telefon, Fernseher: deutsches Programm, Sat-TV, Roomservice, Badewanne oder Dusche, WC, Föhn,Klimaanlage: individuell einstellbar. Laptop-Tresor. Es ist nur eine begrenzte Anzahl verfügbar, darum empfehlen wir eine frühe Reservierung.
+
+h3	Aktuelle Infos:
+
+p
+Frühstück: Buffet
+Parkplätze: Öffentliche Parkplätze stehen kostenfrei an der Unterkunft zur Verfügung.
+Bitte beachten Sie, dass die Preise für Halb- und Vollpension keine Getränke enthalten.
+Einzelzimmer auf Anfrage.
+
+Tabelle: Unsere Zimmerangebote
