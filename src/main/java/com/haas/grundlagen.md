@@ -1,6 +1,7 @@
 # 🌐 **Grundlagen HTML / CSS / PHP – Einfach & Verständlich**
 
 ## 📖 **Inhaltsverzeichnis**
+
 1. [Was ist HTML?](#1-was-ist-html)
 2. [Was ist CSS?](#2-was-ist-css)
 3. [Was ist PHP?](#3-was-ist-php)
@@ -16,22 +17,24 @@
 ## 1. Was ist HTML?
 
 **HTML** = **Hypertext Markup Language**  
-Das ist die **Grundstruktur** jeder Webseite. Man kann es mit dem **Skelett** eines Hauses vergleichen.
+Das ist die **Grundstruktur** jeder Webseite. Man kann es mit dem **Skelett** eines Hauses
+vergleichen.
 
 ```html
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Meine erste Seite</title>
+  <title>Meine erste Seite</title>
 </head>
 <body>
-    <h1>Hallo Welt!</h1>
-    <p>Das ist meine erste Webseite.</p>
+<h1>Hallo Welt!</h1>
+<p>Das ist meine erste Webseite.</p>
 </body>
 </html>
 ```
 
 **Aufgabe von HTML:**
+
 - Strukturieren: Überschriften, Absätze, Listen, Tabellen
 - Inhalte einfügen: Text, Bilder, Videos, Links
 - Semantik: Bedeutung von Inhalten festlegen
@@ -62,6 +65,7 @@ p {
 ```
 
 **Aufgabe von CSS:**
+
 - Farben, Schriftarten, Hintergründe
 - Layout (Positionierung, Abstände)
 - Responsive Design (für Handy, Tablet, PC)
@@ -83,6 +87,7 @@ echo "<p>Hallo $name, du bist $alter Jahre alt.</p>";
 ```
 
 **Aufgabe von PHP:**
+
 - Daten aus Formularen empfangen
 - Mit Datenbanken verbinden (MySQL)
 - Benutzer-spezifische Inhalte anzeigen
@@ -101,28 +106,28 @@ echo "<p>Hallo $name, du bist $alter Jahre alt.</p>";
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Seite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Seite</title>
 </head>
 <body>
-    <!-- Hier kommt der sichtbare Inhalt -->
+<!-- Hier kommt der sichtbare Inhalt -->
 </body>
 </html>
 ```
 
 ### 🏷️ **Wichtige HTML-Tags**
 
-| Tag | Bedeutung | Beispiel |
-|-----|-----------|----------|
-| `<h1>` bis `<h6>` | Überschriften | `<h1>Titel</h1>` |
-| `<p>` | Absatz | `<p>Text</p>` |
-| `<a>` | Link | `<a href="https://example.com">Link</a>` |
-| `<img>` | Bild | `<img src="bild.jpg" alt="Beschreibung">` |
-| `<ul>`, `<ol>`, `<li>` | Listen | `<ul><li>Punkt</li></ul>` |
-| `<div>` | Container (Block) | `<div class="container">` |
-| `<span>` | Container (Inline) | `<span class="highlight">` |
-| `<header>`, `<main>`, `<footer>` | Semantische Struktur | – |
+| Tag                              | Bedeutung            | Beispiel                                  |
+|----------------------------------|----------------------|-------------------------------------------|
+| `<h1>` bis `<h6>`                | Überschriften        | `<h1>Titel</h1>`                          |
+| `<p>`                            | Absatz               | `<p>Text</p>`                             |
+| `<a>`                            | Link                 | `<a href="https://example.com">Link</a>`  |
+| `<img>`                          | Bild                 | `<img src="bild.jpg" alt="Beschreibung">` |
+| `<ul>`, `<ol>`, `<li>`           | Listen               | `<ul><li>Punkt</li></ul>`                 |
+| `<div>`                          | Container (Block)    | `<div class="container">`                 |
+| `<span>`                         | Container (Inline)   | `<span class="highlight">`                |
+| `<header>`, `<main>`, `<footer>` | Semantische Struktur | –                                         |
 
 ---
 
@@ -131,18 +136,23 @@ echo "<p>Hallo $name, du bist $alter Jahre alt.</p>";
 ### 🔗 **CSS einbinden**
 
 **1. Externe Datei (empfohlen):**
+
 ```html
+
 <link rel="stylesheet" href="style.css">
 ```
 
 **2. Im <head> (intern):**
+
 ```html
+
 <style>
-    body { background: lightblue; }
+  body { background: lightblue; }
 </style>
 ```
 
 **3. Direkt am Element (Inline – nur für Ausnahmen):**
+
 ```html
 <p style="color: red;">Text</p>
 ```
@@ -199,14 +209,17 @@ div.artikel p { margin: 0; }
 ### 📥 **Formular verarbeiten**
 
 **HTML-Formular (form.html):**
+
 ```html
+
 <form action="verarbeitung.php" method="post">
-    <input type="text" name="name">
-    <input type="submit" value="Absenden">
+  <input type="text" name="name">
+  <input type="submit" value="Absenden">
 </form>
 ```
 
 **PHP-Verarbeitung (verarbeitung.php):**
+
 ```php
 <?php
 $name = $_POST['name'];
@@ -216,15 +229,15 @@ echo "<p>Hallo, $name!</p>";
 
 ### 🔁 **Wichtige PHP-Konzepte**
 
-| Konzept | Beispiel |
-|---------|----------|
-| **Variable** | `$name = "Anna";` |
-| **Bedingung** | `if ($alter > 18) { ... }` |
-| **Schleife** | `for ($i = 0; $i < 5; $i++) { ... }` |
-| **Array** | `$farben = ["rot", "grün", "blau"];` |
-| **Funktion** | `function summe($a, $b) { return $a + $b; }` |
-| **Session** | `session_start(); $_SESSION['user'] = "Anna";` |
-| **Datenbank** | `mysqli_query($conn, "SELECT ...");` |
+| Konzept       | Beispiel                                       |
+|---------------|------------------------------------------------|
+| **Variable**  | `$name = "Anna";`                              |
+| **Bedingung** | `if ($alter > 18) { ... }`                     |
+| **Schleife**  | `for ($i = 0; $i < 5; $i++) { ... }`           |
+| **Array**     | `$farben = ["rot", "grün", "blau"];`           |
+| **Funktion**  | `function summe($a, $b) { return $a + $b; }`   |
+| **Session**   | `session_start(); $_SESSION['user'] = "Anna";` |
+| **Datenbank** | `mysqli_query($conn, "SELECT ...");`           |
 
 ---
 
@@ -246,6 +259,7 @@ meinprojekt/
 ### 🔧 **Beispiel: Alles zusammen**
 
 **index.php**
+
 ```php
 <?php include 'inc/header.php'; ?>
 
@@ -266,6 +280,7 @@ meinprojekt/
 ```
 
 **style.css**
+
 ```css
 body {
     font-family: Arial, sans-serif;
@@ -292,14 +307,18 @@ body {
 ## 8. Wichtige Befehle im Überblick
 
 ### 📄 **HTML**
+
 ```html
 <a href="...">Link</a>
 <img src="..." alt="...">
-<ul><li>Liste</li></ul>
+<ul>
+  <li>Liste</li>
+</ul>
 <div class="...">Container</div>
 ```
 
 ### 🎨 **CSS**
+
 ```css
 farbe: color: red;
 hintergrund: background: #fff;
@@ -310,6 +329,7 @@ abstand außen: margin: 10px;
 ```
 
 ### 🐘 **PHP**
+
 ```php
 <?php echo "Hallo"; ?>          // Ausgabe
 $var = "Wert";                   // Variable
@@ -326,13 +346,13 @@ include "datei.php";             // Datei einbinden
 
 ### ❌ **Häufige Fehler**
 
-| Fehler | Lösung |
-|--------|--------|
-| `<?` statt `<?php` | Immer `<?php` verwenden (kurze Tags sind oft deaktiviert) |
-| Vergessenes `;` am Ende | Jede PHP-Anweisung endet mit `;` |
-| Falscher Dateipfad bei `src` oder `href` | Relativen Pfad prüfen (`img/bild.jpg`, nicht `C:\...`) |
-| CSS-Datei nicht geladen | `<link>`-Tag im `<head>` prüfen |
-| `$_POST` leer | `method="post"` im Formular gesetzt? |
+| Fehler                                   | Lösung                                                    |
+|------------------------------------------|-----------------------------------------------------------|
+| `<?` statt `<?php`                       | Immer `<?php` verwenden (kurze Tags sind oft deaktiviert) |
+| Vergessenes `;` am Ende                  | Jede PHP-Anweisung endet mit `;`                          |
+| Falscher Dateipfad bei `src` oder `href` | Relativen Pfad prüfen (`img/bild.jpg`, nicht `C:\...`)    |
+| CSS-Datei nicht geladen                  | `<link>`-Tag im `<head>` prüfen                           |
+| `$_POST` leer                            | `method="post"` im Formular gesetzt?                      |
 
 ### ✅ **Tipps für den Einstieg**
 
@@ -352,11 +372,11 @@ include "datei.php";             // Datei einbinden
 
 ## 🎯 **Zusammenfassung**
 
-| Sprache | Aufgabe | Wo läuft? |
-|---------|---------|-----------|
-| **HTML** | Struktur | Browser |
-| **CSS** | Design | Browser |
-| **PHP** | Dynamik, Logik, Datenbank | Server |
+| Sprache  | Aufgabe                   | Wo läuft? |
+|----------|---------------------------|-----------|
+| **HTML** | Struktur                  | Browser   |
+| **CSS**  | Design                    | Browser   |
+| **PHP**  | Dynamik, Logik, Datenbank | Server    |
 
 > **Merke:**  
 > HTML = Skelett  

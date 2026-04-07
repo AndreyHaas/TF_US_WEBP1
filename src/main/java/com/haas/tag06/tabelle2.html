@@ -1,90 +1,91 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tabelle Spezifität</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <table>
-      <caption>
-        Beispiele für CSS-Spezifität
-      </caption>
-<!-- Tabellenkopf -->
-      <thead>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tabelle Spezifität</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<table>
+  <caption>
+    Beispiele für CSS-Spezifität
+  </caption>
+  <!-- Tabellenkopf -->
+  <thead>
 
-        <tr>
-          <th>Selektor</th>
-          <th>Beschreibung</th>
-          <th>Punkte</th>
-          <th>Gesamt</th>
-        </tr>
-      </thead>
-<!-- Tabellenkörper -->
-      <tbody>
-      <tr>
-        <td>h1</td>
-        <td>Elementselektor</td>
-        <td>1</td>
-        <td>1</td>
-      </tr>
+  <tr>
+    <th>Selektor</th>
+    <th>Beschreibung</th>
+    <th>Punkte</th>
+    <th>Gesamt</th>
+  </tr>
+  </thead>
+  <!-- Tabellenkörper -->
+  <tbody>
+  <tr>
+    <td>h1</td>
+    <td>Elementselektor</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
 
-      <tr>
-        <td>h1, h2</td>
-        <td>Gruppierung</td>
-        <td>je 1</td>
-        <td>je 1</td>
-      </tr>
+  <tr>
+    <td>h1, h2</td>
+    <td>Gruppierung</td>
+    <td>je 1</td>
+    <td>je 1</td>
+  </tr>
 
-      <tr>
-        <td>.Infobox</td>
-        <td>Klasse</td>
-        <td>10</td>
-        <td>10</td>
-      </tr>
+  <tr>
+    <td>.Infobox</td>
+    <td>Klasse</td>
+    <td>10</td>
+    <td>10</td>
+  </tr>
 
-      <tr>
-        <td>article.infobox</td>
-        <td>Element + Klasse</td>
-        <td>1+10</td>
-        <td>11</td>
-      </tr>
-      <tr>
-        <td>.site-nav a.current</td>
-        <td>Klasse, Element, Attribut</td>
-        <td>10+1+10</td>
-        <td>21</td>
-      </tr>
+  <tr>
+    <td>article.infobox</td>
+    <td>Element + Klasse</td>
+    <td>1+10</td>
+    <td>11</td>
+  </tr>
+  <tr>
+    <td>.site-nav a.current</td>
+    <td>Klasse, Element, Attribut</td>
+    <td>10+1+10</td>
+    <td>21</td>
+  </tr>
 
-      <tr>
-        <td>#top</td>
-        <td>id</td>
-        <td>100</td>
-        <td>100</td>
-      </tr>
+  <tr>
+    <td>#top</td>
+    <td>id</td>
+    <td>100</td>
+    <td>100</td>
+  </tr>
 
-      <tr>
-        <td>&lt;p style="color:pink;"&gt;</td>
-        <td>Inline Style</td>
-        <td>1000</td>
-        <td>1000</td>
-      </tr>
-      </tbody>
-      <!-- Tabellenfuß -->
-       <tfoot>
-        <tr>
-          <!-- 4 Spalten werden m,it colspan verbunden. Die überflüssigen Spalten werden dann gelöscht. -->
-        <td colspan="4">Quelle: Peter Müller, Webtechniken lernen 2</td>
-      </tr>
-       </tfoot>
-    </table>
+  <tr>
+    <td>&lt;p style="color:pink;"&gt;</td>
+    <td>Inline Style</td>
+    <td>1000</td>
+    <td>1000</td>
+  </tr>
+  </tbody>
+  <!-- Tabellenfuß -->
+  <tfoot>
+  <tr>
+    <!-- 4 Spalten werden m,it colspan verbunden. Die überflüssigen Spalten werden dann gelöscht. -->
+    <td colspan="4">Quelle: Peter Müller, Webtechniken lernen 2</td>
+  </tr>
+  </tfoot>
+</table>
 
-    <h1>Die CSS-Kaskade</h1>
-    <p>Werden vom Browser mehrer Anweisungen gefunden, gelten folgende Regeln: <br>
-    1. Anweisungen mit !important gewinnen <br>
-    2. Der Selektor mit der höchsten Punktzahl Spezifität gewinnt. Spezifität ist wichtiger als Reihenfolge. <br>
-    3. Bei gleicher Spezifität gilt die Reihenfolge in CSS. Wer später erscheint, gewinnt.
-    </p>
-  </body>
+<h1>Die CSS-Kaskade</h1>
+<p>Werden vom Browser mehrer Anweisungen gefunden, gelten folgende Regeln: <br>
+  1. Anweisungen mit !important gewinnen <br>
+  2. Der Selektor mit der höchsten Punktzahl Spezifität gewinnt. Spezifität ist wichtiger als
+  Reihenfolge. <br>
+  3. Bei gleicher Spezifität gilt die Reihenfolge in CSS. Wer später erscheint, gewinnt.
+</p>
+</body>
 </html>
