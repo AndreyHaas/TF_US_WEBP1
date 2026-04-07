@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* Allgemeine Angaben für das Hotel Parador */
+
+/* * {outline: 1px solid #444;} */
+html {
+  font-size: 100%;
+}
+
+body {
+  /* das margin des browsers, 8px am Rand, wird  überschrieben */
+  margin: 0;
+  font-family: 'Open Sans',Arial, sans-serif;
+  /* Angabe für alle HTML-Elemente */
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  background-color: #1e5799;
+}
+
+#logo {
+  width: 200px;
+}
+
+/* ------- Angaben für die Navigation --------- */
+ul {
+  /* entfernt die Listenpunkte */
+  list-style-type: none;
+  /* entfernt den Einzug links */
+  padding-left: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+  /* ein inline-Element kann keine width haben, inline-block schon */
+}
+/* Nachfahrenselektor */
+header nav a {
+color: white;
+text-transform: uppercase;
+text-decoration: none;
+border-bottom: 2px solid lightgrey;
+padding: 5px 30px;
+}
+/*  ---------  allgemeine Angaben ---------- */
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Noto Serif';
+  font-weight: 400;
+  font-size: 3rem;
+  /* 3rem entspricht 3 x der Standardschriftgröße 16px = 48px */
+  text-align: center;
+  color: #444;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color:#444;
+  text-align: center;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1rem;
+  color:#1e5799;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  /* Zeilenabstand wird für digitale Medien 140-160% empfohlen  */
+  line-height: 1.4;
+  color:#444;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 50px 20px;
+}
+
+figure {
+  margin:20px auto;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* ----- Angaben für footer -------- */
+footer {
+  background-color: lightgrey;
+  padding: 5px;
+  text-align: center;
+}
+
+footer a {
+  color: black;
+  margin:0 10px;
+}

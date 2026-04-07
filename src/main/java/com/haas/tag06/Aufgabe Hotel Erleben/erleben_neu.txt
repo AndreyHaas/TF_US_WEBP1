@@ -1,0 +1,37 @@
+h1	Aktiv auf La Gomera
+h2	Auf Wanderungen und unter Wasser
+
+
+section	mit 2 div-containern
+	div 1 mit img wanderung_600px.jpg
+	div 2 mit p
+	
+Nebelwälder, tiefe Schluchten, grüne Palmentäler und schroffe Felstürme aus Basalt. La Gomera ist für Wanderfans ein Ort, der eigentlich zu gut ist, um wahr zu sein. Die zweitkleinste der kanarischen Inseln vereint eine fast unglaubliche Vielfalt an Landschaften mit einem so dichten Netz an Wanderwegen, dass es für Naturliebhaber schlicht unmöglich ist, sich hier zu langweilen.
+Dazu kommen mildes Klima und eine hervorragende Infrastruktur auf europäischem Niveau ohne die negativen Seiten des Massentourismus.
+
+section	mit 2 div-containern
+	div 1	h3 Wandertouren zu Traumstränden
+		p
+	div 2 mit img wanderung2_600px.jpg
+
+	
+Valle Gran Rey  im Südwesten ist der beliebteste Ferienort in La Gomera. Das wunderschöne, weitläufige Tal ist für seine grünen Terrassenfelder, Palmenhaine und bunten Obstgärten bekannt und es gibt hier auch ein paar Strände. Beliebte Wanderungen führen zum Wasserfall Salto de Agua im Barranco de Arure, über den Kirchenweg zum Hochtal La Matanza oder auf den Tafelberg La Fortaleza.
+
+h3	Bunte Unterwasserwelt
+
+video	fische_bunt.MP4	
+
+p
+Tauchen Sie ein in eines der artenreichsten Gewässer Europas!
+Im Rahmen eines Halbtageskurses vermitteln wir Ihnen die notwendigen Fertigkeiten und Sie erhalten eine komplette ABC-Leihausrüstung inklusive Maske, Flossen, Anzug und Blei.
+
+p
+Und das können Sie sehen:
+br
+
+Gleich an der Hafenmauer tummeln sich die ersten Fischschwärme (Meeräschen, Barrakudas ...), territoriale Revierkämpfer (Neon-Riffbarsche, Blennies) und wirbellose Tiere (Seesterne, Krebse).
+Weitere Infos und Termine: 
+
+a	https://www.canarianfeeling.de   (Text für sichtbaren Bereich)
+
+	https://www.canarianfeeling.de/la-gomera-erleben/aktivurlaub/tauchen-schnorcheln  (Verlinkung)

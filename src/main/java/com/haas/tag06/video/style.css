@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*CSS für dieTabelle Spezifität*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table, td, tr {
+    border: 2px solid rgba(164, 205, 171, 0.5);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    text-align: left;
+    font-weight: 700px;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: darkmagenta;
+    color: white;
+}
+
+tfoot{
+    font-size: 0.8rem;
+}
+
+/* für ungerade Platznummern innerhalb des tbody*/
+tbody tr:nth-child(odd){
+    background-color: rgba(164, 205, 171, 0.5);
+}
+
+/* für gerade Platznummern im tbody*/
+tbody tr:nth-child(even) {
+    background-color: rgba(164, 205, 171, 0.2);
+}
+
+/* die ersten Zellen innerhalb der Zeilen werden linksbündig */
+
+tr td:first-child,
+th:first-child{
+    text-align: left;
+}

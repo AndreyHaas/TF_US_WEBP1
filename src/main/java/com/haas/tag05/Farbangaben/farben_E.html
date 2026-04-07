@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farben und Verläufe</title>
+    <style>
+      /* für alle div Container */
+      div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        margin: 10px;
+      }
+
+      .farbe1 {
+        background-color: rgb(255, 127, 80);
+      }
+
+      .farbe2 {
+        background-color: rgba(255, 127, 80, 0.5);
+      }
+
+      .farbe3 {
+        background-color: #1e90ff;
+        border-radius: 8px 0px;
+      }
+
+      .farbe4 {
+        background: linear-gradient(to top, #9a9595 0%, #e5e1e1 100%);
+      }
+
+      .farbe5 {
+        background: linear-gradient(to bottom, #f6f8f9 0%, #e5ebee 50%, #d7dee3 51%, #f5f7f9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      }
+
+      .bild {
+        width: 200px;
+        height: 200px;
+        border: none;
+      }
+      /* Mit dem border-radius von 50% wird das Bild rund */
+      img {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <!-- Hier beginnt HTML-->
+
+  <body>
+    <h1>Farben und Verläufe</h1>
+
+    <div class="farbe1">1</div>
+    <div class="farbe2">2</div>
+    <div class="farbe3">3</div>
+    <div class="farbe4">4</div>
+    <div class="farbe5">5</div>
+    <div class="bild"><img src="../img/giraffe_200px.jpg" alt="Giraffe"></div>
+  </body>
+</html>
