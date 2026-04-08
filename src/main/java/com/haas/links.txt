@@ -11,4 +11,4 @@ https://www.colorzilla.com/de/gradient-editor/
 Flex einfach:
 https://kulturbanause.de/blog/einfuhrung-in-das-flexbox-modell-von-css/
 
-https://flexboxfroggy.com/#de</u></link>
+https://flexboxfroggy.com/#de
