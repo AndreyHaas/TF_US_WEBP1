@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox mit Bildern</title>
+    <style>
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            column-gap: 25px;
+        }
+
+        figure {
+            flex: 1 1 200px;
+            margin: 16px 0;
+        }
+
+        img {
+            /*width: 100%;
+            height: auto;
+            display: block;*/
+        }
+    </style>
+</head>
+<body>
+<h1>Flexbox mit 4 Bildern im figure-Container</h1>
+<section>
+    <figure>
+        <img src="./img/loewe_400px.jpg" alt="Loewe">
+        <figcaption>Ein Loewe aus Wuppertaler Zoo</figcaption>
+    </figure>
+    <figure>
+        <img src="./img/papagei_400px.jpg" alt="Papagei">
+        <figcaption>Ein Papagei</figcaption>
+    </figure>
+    <figure>
+        <img src="./img/wolf_400px.jpg" alt="Wolf">
+        <figcaption>Ein Wolf</figcaption>
+    </figure>
+    <figure>
+        <img src="./img/zebras_400px.jpg" alt="Zebras">
+        <figcaption>Ein Paar Zebras</figcaption>
+    </figure>
+</section>
+</body>
+</html>

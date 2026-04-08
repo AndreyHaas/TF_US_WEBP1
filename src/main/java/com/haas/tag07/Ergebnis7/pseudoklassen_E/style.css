@@ -1,0 +1,52 @@
+  @charset "utf-8";
+
+/* * {border: 1px solid #000;  } */
+body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1000px;
+  margin: auto;
+}
+h1 {
+  font-weight: 300;
+  text-align: center;
+}
+figure {
+  text-align: center;
+  padding: 0;
+  margin-top: 100px;
+}
+
+/* ---------           Navigation Start    --------------- */
+nav {
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 3px solid #0086f3;
+  padding: 5px 20px;
+  margin: 0 10px;
+  background-color: #cee2f2;
+}
+ 
+/*  ------ weitere CSS-Angaben mit Pseudoklassen    ----- */
+
+a:link {background-color: #c5dee8;}
+a:visited {background-color: #a2d4e8;}
+a:hover {background-color: grey; color:white;}
+a:focus {background-color: #e8c1a2;}
+a:active {background-color: #e8c1a2;}
+
+/* Attributselekor */
+a[aria-current="page"] {
+  border-bottom: 3px solid #e87317;
+}

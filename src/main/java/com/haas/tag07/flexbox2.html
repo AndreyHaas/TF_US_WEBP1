@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 2</title>
+    <style>
+        section, div {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        section {
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+<h1>Flexbox 2 - Align-items</h1>
+<section>
+    <div>Element 1</div>
+    <div>Element 2</div>
+    <div>Element 3</div>
+</section>
+<h2>Elemente auf der Kreuzachse ausrichten<br>
+    <p>
+        Align-items richtet die Elementen vertikal auf der Kreuzachse aus (hir ist das die Kreuzachse, da die Hauptachse
+        horizontal ist). align-items: flex-start; richtet die Elemente am Anfang der Kreuzachse aus, align-items:
+        center; richtet die Elemente in der Mitte der Kreuzachse aus und
+        align-items hat einen Standartwert: stretch, damit werden die Elemente auf die volle Höhe der Kreuzachse
+        gestreckt.
+        Angabe werden die Kindelemente so hoch wie das Elternelement, damit die Kreuzachse komplett ausgefüllt wird.
+    </p>
+</body>
+</html>

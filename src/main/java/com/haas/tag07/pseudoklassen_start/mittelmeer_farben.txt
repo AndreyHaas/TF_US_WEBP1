@@ -1,0 +1,15 @@
+Inseln im Mittelmeer  
+
+Logofarben und Farbtöne: 
+blau 1	#00a6e8
+15%		#c5dee8
+30%		#a2d4e8
+
+blau 2	#0086f3
+15%		#cee2f2
+30%		#aad2f2 
+60%		#61b1f2
+
+orange	#e87317
+30%		#e8c1a2
+50%		#e8a674

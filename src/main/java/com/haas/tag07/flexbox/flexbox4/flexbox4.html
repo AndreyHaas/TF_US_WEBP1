@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Inhalt</title>
+    <style>
+        .flexcontainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* zentriert nur die flexitems*/
+        }
+
+        .flexitem {
+            border: 1px dotted black;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            /* zentriert die inhalte der flexitems*/
+        }
+    </style>
+</head>
+<body>
+<!--1. Section mit 4 Spalten -->
+<section class="flexcontainer">
+    <div class="flexitem">
+        <h2>MARKETING</h2>
+        <p>
+            Dies ist ein Beispiel für einen Marketing-Bereich.
+        </p>
+    </div>
+    <div class="flexitem">
+        <h2>SOCIAL MEDIA</h2>
+        <p>
+            YouTube, Facebook und Co. stehen im Fokus unserer Social-Media-Marketing-Beratung sowie die Optimierung, die
+            Betreuung und der Aufbau von Social-Media-Kanälen.
+        </p>
+    </div>
+    <div class="flexitem">
+        <h2>WORKSHOPS</h2>
+        <p>
+            Workshops und Schulungen für Ihre Mitarbeiter durch Online-Profis mit jahrelanger Praxiserfahrung. Gerne
+            bedienen wir Ihre aktuellen &amp; individuellen Ansprüche.
+        </p>
+    </div>
+    <div class="flexitem">
+        <h2>WERBUNG</h2>
+        <p>
+            Effektive und schnelle Reichweitensteigerung sorgt für Aufmerksamkeit. Dabei stehen Effizienz &amp; Qualität
+            bei geringen Kosten im Vordergrund.
+        </p>
+    </div>
+</section>
+
+<!--2. Section mit 2 Spalten -->
+<section class="flexcontainer">
+    <div class="flexitem">
+        <h2>Ich bin das Flexitem A</h2>
+        <p>
+            Hier steht ein total schöner Kommentar als Kundenmeinung
+        </p>
+    </div>
+    <div class="flexitem">
+        <h2>Ich bin das Flexitem B</h2>
+        <p>
+            Hier steht ein total schöner Kommentar als Kundenmeinung
+        </p>
+    </div>
+</section>
+</body>
+</html>

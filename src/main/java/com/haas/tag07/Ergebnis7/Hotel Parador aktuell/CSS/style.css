@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* stylesheet für das Projekt Hotel Parador */
+
+/* * {outline: 1px solid #444;} */
+html {
+  font-size: 100%;
+  /* Standardgröße für p: 16px = 1em/rem */
+}
+
+body {
+  font-family: 'Open Sans';
+  margin: 0;
+  padding:0;
+}
+
+header {
+  padding: 15px;
+  background-color: #1e5799;
+  text-align: center;
+}
+#logo {
+  width: 180px;
+  height: auto;
+  margin:20px;
+}
+
+/* ------ hier wird die Navigation gestylt ---------*/
+
+ul {
+  /* damit die Listenpunkte entfallen */
+  list-style-type: none;
+  /* der Innenabstand links wird entfernt */
+  padding-left: 0;
+}
+
+li {
+  /* die li-Elemente werden freundlich und rutschen nebeneinander */
+  display: inline;
+  margin: 20px;
+}
+
+nav a {
+  /* das Standard-Aussehen für a wird geändert */
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid lightgrey;
+  padding: 5px 25px;
+  /* Angabe für Großbuchstaben */
+  text-transform: uppercase;
+}
+nav a:hover {background-color:#7db9e8;}
+nav a:active {border-bottom: 2px solid #aa5b00;}
+
+nav a[aria-current] {
+  background-color:#7db9e8;
+}
+
+/* Allgemeine Angaben */
+img {
+  width: 100%;
+  height: auto;
+}
+/* mit dieser Angabe passen sich Bilder zu 100% im Elterncontainer an */
+
+h1 {
+  font-family: 'Noto Serif';
+  font-weight: 400;
+  font-size: 3rem;
+  /* 3rem = 48px */
+  color: #444;
+  text-align: center;
+  margin-bottom: 0;
+}
+h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #444;
+  text-align: center;
+  margin-top: 0;
+}
+h3 {
+  font-size: 1rem;
+  color: #1e5799;
+  text-transform: uppercase;
+}
+p {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.4;
+}
+figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* ------ hier beginnt main -------*/
+main {
+ max-width: 900px;
+  margin: auto;
+  background-color: white;
+  padding: 0 50px 20px;
+  /* 3 Werte: oben, links/rechts, unten */
+}
+figure {
+  margin: 16px 0;
+}
+
+/* ----------- Zimmerseite ---------------- */
+#zimmerbilder {
+  display: flex;
+  column-gap: 3px;
+}
+
+.rot {
+  color: crimson;
+}
+/*    ------ Tabelle Anfang ------    */
+table {
+  font-size: 0.8em;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 30px 0 20px;
+}
+td,
+th {
+  padding: 5px;
+  background-color: #b4e0f9;
+  border: thin solid #fff;
+}
+
+th {
+  background-color: antiquewhite;
+}
+
+caption {
+  border-left: thin solid #fff;
+  border-right: thin solid #fff;
+  color: #fff;
+  background-color: #aa5b00;
+  padding: 5px 0px;
+}
+
+tfoot td {
+  text-align: center;
+  color: #aa5b00;
+  background-color: antiquewhite;
+}
+
+td a {
+  color: #004969;
+}
+
+/*    ------    Tabelle Ende      ------    */
+
+/*  -------  Erlebenseite               ------- */
+/* 2 sections mit jeweils 2 div-containern, die jeweils ein Bild und Text enthalten */
+.bild_text {
+  display: flex;
+  column-gap: 15px;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.bild_text p, h3 {
+  margin-top: 0;
+}
+.halb50 {
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+/*   Angaben für den footer */
+footer {
+  background-color: lightgray;
+  padding: 5px;
+  text-align: center;
+}
+
+footer a {
+  font-size: 1rem;
+  color: #000;
+  margin: 0 10px;
+}

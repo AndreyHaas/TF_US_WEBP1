@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox mit Bildern</title>
+<style>
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    /* bewirkt, dass sich die Kindelemente bei kleineren viewports umbrechen */
+    column-gap: 25px;
+  }
+  figure {
+    margin: 16px 0;
+  }
+  img {
+    /* width: 100%; height:auto; */
+  }
+</style>
+
+</head>
+<body>
+  <h1>Flexbox mit 4 Bildern im figure-Container</h1>
+  <section>
+    <figure>
+      <img src="./img/loewe_400px.jpg" alt="Löwe">
+      <figcaption>Ein Löwe aus dem Wuppertaler Zoo</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./img/papagei_400px.jpg" alt="papagei_400px">
+      <figcaption>Der Papagei wohnt im Grugapark</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./img/wolf_400px.jpg" alt="weißer Wolf">
+      <figcaption>Ein weißer Wolf im Wuppertaler Zoo</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./img/zebras_400px.jpg" alt="Zebras">
+      <figcaption>Zwei Zebras</figcaption>
+    </figure>
+  </section>
+  
+</body>
+</html>
