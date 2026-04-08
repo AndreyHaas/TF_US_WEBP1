@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaHub — Deutsche Java-Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-container">
+    <!-- KOPFZEILE -->
+    <header class="header">
+        <h1>☕ JavaHub</h1>
+        <p class="header-subtitle">Deutsche Java-Community: Diskussionen, Best Practices, Erfahrungen</p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <a href="#" class="nav-link">🏠 Feed</a>
+        <a href="#" class="nav-link">💬 Diskussionen</a>
+        <a href="#" class="nav-link">✨ Best Practices</a>
+        <a href="#" class="nav-link">📚 Lernmaterialien</a>
+        <a href="#" class="nav-link">👥 Community</a>
+    </nav>
+
+    <!-- HAUPTINHALT -->
+    <main class="main-content">
+        <!-- Beitrag 1 -->
+        <article class="post-card">
+            <h2 class="post-title">
+                <a href="#">Stream API: 5 Anti-Patterns, die die Performance killen</a>
+            </h2>
+            <div class="post-meta">
+                <span>✍️ Klaus Wagner</span>
+                <span>🕐 vor 2 Stunden</span>
+                <span>💬 47 Kommentare</span>
+            </div>
+            <p>Entwickler missbrauchen häufig parallele Streams, wo sie nicht benötigt werden. Wir analysieren reale
+                Produktionsfälle, in denen sequenzielle Streams zehnmal schneller waren...</p>
+            <div class="post-tags">
+                <span class="tag tag-java">#Java</span>
+                <span class="tag tag-stream">#StreamAPI</span>
+                <span class="tag">#Performance</span>
+            </div>
+        </article>
+
+        <!-- Beitrag 2 -->
+        <article class="post-card">
+            <h2 class="post-title">
+                <a href="#">Virtual Threads im Projekt mit 10k Anfragen/Sekunde: Unsere Erfahrung</a>
+            </h2>
+            <div class="post-meta">
+                <span>✍️ Sabine Hoffmann</span>
+                <span>🕐 gestern</span>
+                <span>💬 124 Kommentare</span>
+            </div>
+            <p>Migration auf Java 21 mit virtuellen Threads. Ergebnisse: Speicherverbrauch um 40% gesenkt, Durchsatz
+                verdreifacht. Wir teilen die Stolpersteine...</p>
+            <div class="post-tags">
+                <span class="tag tag-java">#Java21</span>
+                <span class="tag">#VirtualThreads</span>
+                <span class="tag">#Concurrency</span>
+            </div>
+        </article>
+
+        <!-- Beitrag 3 -->
+        <article class="post-card">
+            <h2 class="post-title">
+                <a href="#">Spring Boot 3.2 + GraalVM: Native Image vs. JVM</a>
+            </h2>
+            <div class="post-meta">
+                <span>✍️ Jürgen Schmidt</span>
+                <span>🕐 vor 3 Tagen</span>
+                <span>💬 89 Kommentare</span>
+            </div>
+            <p>Vergleich von Startzeit, Speicherverbrauch und Performance. Spoiler: Für Microservices ändert das native
+                Image die Spielregeln...</p>
+            <div class="post-tags">
+                <span class="tag tag-spring">#SpringBoot</span>
+                <span class="tag">#GraalVM</span>
+                <span class="tag">#NativeImage</span>
+            </div>
+        </article>
+
+        <!-- Beitrag 4 -->
+        <article class="post-card">
+            <h2 class="post-title">
+                <a href="#">Record-Klassen vs. Lombok: Ein pragmatischer Vergleich</a>
+            </h2>
+            <div class="post-meta">
+                <span>✍️ Petra Zimmermann</span>
+                <span>🕐 vor 5 Tagen</span>
+                <span>💬 63 Kommentare</span>
+            </div>
+            <p>Seit Java 14 haben wir Records. Sind sie ein vollwertiger Lombok-Ersatz? Wir vergleichen Boilerplate,
+                Performance und Anwendungsfälle aus der Praxis...</p>
+            <div class="post-tags">
+                <span class="tag tag-java">#Java17</span>
+                <span class="tag">#Records</span>
+                <span class="tag">#Lombok</span>
+            </div>
+        </article>
+
+        <!-- SEKTION: Best Practices -->
+        <div>
+            <h2 class="section-title">✨ Best Practices der Woche</h2>
+            <div class="best-practice-grid">
+                <div class="practice-card">
+                    <h3>📦 Builder-Pattern</h3>
+                    <p>Bei 5+ Parametern nutze Builder statt verschachtelter Konstruktoren.</p>
+                </div>
+                <div class="practice-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <h3>⚡ Optional nicht für Felder</h3>
+                    <p>Optional nie als Feld-Typ verwenden – es bricht die Serialisierung.</p>
+                </div>
+                <div class="practice-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <h3>🔄 Immutable Collections</h3>
+                    <p>List.copyOf() statt Collections.unmodifiableList() für bessere Performance.</p>
+                </div>
+                <div class="practice-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <h3>⚙️ Pattern Matching für instanceof</h3>
+                    <p>Seit Java 16 spart Pattern Matching Boilerplate-Code und erhöht die Lesbarkeit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- KOMMENTARSEKTION -->
+        <div class="comments-section">
+            <h3>💬 Diskussion: Best Practices in Java 21</h3>
+            <div class="comment">
+                <strong>@thomas_mueller</strong> <span class="comment-time">vor 5 Minuten</span>
+                <p>Nutzt schon jemand sequenced collections im Produktivbetrieb? Lohnt sich der Umstieg?</p>
+            </div>
+            <div class="comment">
+                <strong>@anna_weber</strong> <span class="comment-time">vor 2 Stunden</span>
+                <p>Wir sind in unserem Projekt umgestiegen. Der Zugriff auf erstes/letztes Element ist viel bequemer.
+                    Die Migration hat etwa zwei Tage gedauert.</p>
+            </div>
+            <div class="comment">
+                <strong>@lukas_fischer</strong> <span class="comment-time">vor 1 Stunde</span>
+                <p>Gibt es Performance-Nachteile bei sequenced collections? Hat das jemand getestet?</p>
+            </div>
+            <label for="commentInput" class="visually-hidden">Ihr Kommentar</label>
+            <textarea id="commentInput" class="comment-input" rows="3"
+                      placeholder="An der Diskussion beteiligen..."></textarea>
+            <button class="btn">Kommentar senden</button>
+        </div>
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <!-- Widget: Top-Diskussionen -->
+        <div class="widget">
+            <h3 class="widget-title">🔥 Heiße Diskussionen</h3>
+            <div class="discussion-item">
+                <div class="discussion-title">Bester Weg, Java 2025 zu lernen?</div>
+                <div class="discussion-meta">142 Antworten · vor 3 Tagen</div>
+            </div>
+            <div class="discussion-item">
+                <div class="discussion-title">Microservices oder modulares Monolith?</div>
+                <div class="discussion-meta">98 Antworten · gestern</div>
+            </div>
+            <div class="discussion-item">
+                <div class="discussion-title">Kotlin vs. Java: Was für Einsteiger?</div>
+                <div class="discussion-meta">76 Antworten · vor 5 Tagen</div>
+            </div>
+            <div class="discussion-item">
+                <div class="discussion-title">Wie besteht man Vorstellungsgespräche bei großen Tech-Firmen?</div>
+                <div class="discussion-meta">54 Antworten · vor 1 Tag</div>
+            </div>
+        </div>
+
+        <!-- Widget: Newsletter -->
+        <div class="widget">
+            <h3 class="widget-title">📧 Java-Newsletter</h3>
+            <p class="widget-text">Beste Artikel und Diskussionen einmal wöchentlich</p>
+            <label for="newsletterEmail" class="visually-hidden">Ihre E-Mail-Adresse</label>
+            <input type="email" id="newsletterEmail" class="widget-input" placeholder="Ihre E-Mail-Adresse">
+            <button class="btn widget-btn">Abonnieren</button>
+        </div>
+
+        <!-- Widget: Beliebte Tags -->
+        <div class="widget">
+            <h3 class="widget-title">🏷️ Beliebte Tags</h3>
+            <div class="tags-container">
+                <span class="tag">#Java21</span>
+                <span class="tag">#SpringBoot</span>
+                <span class="tag">#Microservices</span>
+                <span class="tag">#Kafka</span>
+                <span class="tag">#Hibernate</span>
+                <span class="tag">#Maven</span>
+                <span class="tag">#Gradle</span>
+                <span class="tag">#JUnit5</span>
+                <span class="tag">#Docker</span>
+                <span class="tag">#Kubernetes</span>
+            </div>
+        </div>
+
+        <!-- Widget: Top-Contributor -->
+        <div class="widget">
+            <h3 class="widget-title">🏆 Aktive Mitglieder</h3>
+            <div class="discussion-item">
+                <div class="discussion-title">⭐ Michael Schneider</div>
+                <div class="discussion-meta">247 Beiträge · 89 Antworten</div>
+            </div>
+            <div class="discussion-item">
+                <div class="discussion-title">⭐ Julia Becker</div>
+                <div class="discussion-meta">198 Beiträge · 156 Antworten</div>
+            </div>
+            <div class="discussion-item">
+                <div class="discussion-title">⭐ Stefan Richter</div>
+                <div class="discussion-meta">145 Beiträge · 203 Antworten</div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- FUSSZEILE -->
+    <footer class="footer">
+        <p>JavaHubDe — Deutsche Java-Community seit 2026</p>
+        <p class="footer-links">📧 kontakt@javahubde.de | 🐦 @javahub_de_de | 💬 Discord</p>
+    </footer>
+</div>
+</body>
+</html>
