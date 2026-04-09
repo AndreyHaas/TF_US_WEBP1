@@ -12,3 +12,6 @@ Flex einfach:
 https://kulturbanause.de/blog/einfuhrung-in-das-flexbox-modell-von-css/
 
 https://flexboxfroggy.com/#de
+
+/*Background Fonts*/
+https://www.toptal.com/designers/subtlepatterns/

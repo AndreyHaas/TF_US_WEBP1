@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+  html {
+        box-sizing: border-box;
+         font-size: 18px;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #wrapper {
+        width: 600px;
+        min-height: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+      header {
+        text-align: center;
+        background-color: lightgray;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+      }
+      footer {
+        text-align: center;
+        background-color: lightgray;
+        padding: 5px;
+        position: sticky;
+        bottom: 0;
+      }
+      figure {
+        padding: 10px 10px 0 10px;
+        margin: 0;
+      }
+      figure img {
+        width: 100px;
+        margin-right: 20px;
+      }
+      h2 {
+        position: sticky;
+        top:110px;
+        background-color: white;
+        z-index: 1;
+      }

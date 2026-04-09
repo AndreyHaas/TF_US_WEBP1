@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroung-img</title>
+    <style>
+        html{
+            min-height: 100vh;
+        }        
+        body{
+            background-image: url(./bilder/brain.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        h1{
+            color: white;
+        }
+        div{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Großes Bild für den background.
+    </h1>
+    <div>
+        Die Angabe min-height für html bewirkt, dass die Höhe des Bildes immer 100% des Viewports füllen muss. <br>
+        Mit background-size: cover wird das Bild so skaliert, dass es den gesamten Hintergrund ausfüllt, ohne das Seitenverhältnis zu verzerren. <br>
+    </div>
+</body>
+</html>
