@@ -29,13 +29,13 @@
         flex-direction: column;
         gap: 5px;
         margin-bottom: 15px;
-        max-width: 150px;  /* ← Gleiche Breite wie die linke Grid-Spalte */
+        max-width: 150px;
     }
 
     .betreff-group select {
         padding: 8px;
         border: 1px solid black;
-        width: 100%;  /* ← Nimmt die volle Breite des Containers (150px) */
+        width: 100%;
         box-sizing: border-box;
     }
 
@@ -43,7 +43,7 @@
         display: grid;
         grid-template-columns: 150px 1fr;
         gap: 15px 10px;
-        align-items: start;  /* ← statt center, damit Text oben beginnt */
+        align-items: start;
     }
 
     .form-grid input,
@@ -72,6 +72,7 @@
     button:hover {
         background-color: #0056b3;
     }
+
     .form-grid select {
         width: auto;           /* Nicht volle Breite */
         min-width: 200px;      /* Mindestbreite */

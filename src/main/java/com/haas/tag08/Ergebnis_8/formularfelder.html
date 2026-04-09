@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularfelder</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div {
+        margin-bottom: 20px;
+      }
+     /* verhindert das Verändern der Größe */
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formularfelder</h1>
+<!-- Zum Testen des Formulars kann man mailto verwenden -->
+    <form action="#" method="post">
+      <!-- action gibt an wohin das Formular verschickt werden soll. method=post: Daten werden im Hintergrund übertragen -->
+      <div>
+        <label for="vorname">Vorname</label>
+        <input type="text" name="vorname" placeholder="Vorname" id="vorname" required />
+        <!-- required bedeutet erforderlich/Pflicht 
+     das label-tag ist wie ein Etikett für das input-Feld. label stellt einen Bezug her und muss mit der id des input-Felds übereinstimmen-->
+      </div>
+      
+      <div>
+        <label for="name">Nachname</label>
+        <input type="text" name="name" placeholder="Nachname" id="name" required />
+      </div>
+
+      <div>
+        <label for="email">E-Mail-Adresse</label>
+        <input type="email" name="email" placeholder="E-Mail-Adresse" id="email" required />
+      </div>
+
+      <div>
+        <label for="telefon">Telefon</label>
+        <input type="tel" name="telefon" placeholder="Telefon" id="telefon" />
+      </div>
+      <!-- input-Feld für ein Dokument zum upload -->
+      <div>
+        <label for="myfile">Mein Dokument</label>
+        <input type="file" name="myfile" id="myfile" />
+      </div>
+<!-- Passwort eingeben. Mehr Angaben: die Anzahl der Zeichen begrenzen -->
+      <div>
+        <label for="passwort">Passwort</label>
+        <input type="password" name="passwort" id="passwort" maxlength="15"/>
+      </div>
+    
+      <div>
+        <label for="datum">Datum auswählen</label>
+        <input type="date" name="datum" id="datum" value="2026-04-10" min="2026-04-10" max="2026-12-31"/>
+      </div>
+<!-- Größe der textarea wird durch cols und rows bestimmt -->
+      <div>
+        <label for="nachricht">Ihre Nachricht</label>
+        <textarea name="nachricht" id="nachricht" cols="40" rows="10" placeholder="Nachricht schreiben"></textarea>
+      </div>
+
+      <!-- Gruppe von Checkboxen mit 3 Kästchen. Der name ist bei allen Checkboxen gleich! Mehrfachauswahl möglich -->
+      <div>
+        <label for="extras">Bitte auswählen</label>
+        <label><input type="checkbox" name="extras" value="balkon">Balkon</label>
+        <label><input type="checkbox" name="extras" value="meerblick">Meerblick</label>
+        <label><input type="checkbox" name="extras" value="fr">Frühstück</label>
+      </div>
+
+      <!-- Mit dem type radio erstellt man einen Button mit Entweder/Oder-Auswahl -->
+       <div>
+        <label for="zimmer">Bitte Zimmer auswählen</label>
+        <label><input type="radio" name="zimmer" value="standard">Standard</label>
+        <label><input type="radio" name="zimmer" value="meerblick">Meerblick</label>
+        <label><input type="radio" name="zimmer" value="superior">Superior</label>
+      </div>
+
+      <!-- eine Dropdownliste mit mehreren Punkten zur Auswahl. Standard wählt das 1. option-tag aus -->
+       <div>
+        <label for="betreff">Ihre Anfrage</label>
+        <select name="betreff" id="betreff">
+          <!-- <option disabled selected>Betreff auswählen</option> -->
+          <option value="buchung">Ich möchte buchen</option>
+          <option value="frage">Ich habe eine Frage zum Hotel</option>
+          <option value="anreise">Mitteilung zur Anreise</option>
+        </select>
+       </div>
+<!-- Ein button zum Abschicken -->
+       <div>
+        <button type="submit">Formular senden</button>
+       </div>
+
+
+    </form>
+  </body>
+</html>
