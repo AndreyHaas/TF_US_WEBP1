@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta
+      name="description"
+      content="Urlaub auf La Gomera im Hotel Parador. Das komfortable Hotel präsentiert sich mit idyllischen Innenhöfen, einladenden Aufenthaltsräumen, subtropischer Gartenanlage und mit einem grandiosem Panoramapool."
+  />
+  <title>Erleben Hotel Parador</title>
+  <link rel="stylesheet" href="../CSS/style.css"/>
+  <link rel="stylesheet" href="../CSS/fonts.css">
+  <style>
+    .anfrage-box {
+        border: 1px solid #ccc;
+        padding: 20px;
+    }
+
+    legend {
+        font-weight: lighter;
+        font-size: 15px;
+        padding: 0 10px;
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .betreff-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 15px;
+        max-width: 150px;  /* ← Gleiche Breite wie die linke Grid-Spalte */
+    }
+
+    .betreff-group select {
+        padding: 8px;
+        border: 1px solid black;
+        width: 100%;  /* ← Nimmt die volle Breite des Containers (150px) */
+        box-sizing: border-box;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 15px 10px;
+        align-items: start;  /* ← statt center, damit Text oben beginnt */
+    }
+
+    .form-grid input,
+    .form-grid textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .form-grid textarea {
+        resize: vertical;
+    }
+
+    button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        width: auto;
+        justify-self: start;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+    .form-grid select {
+        width: auto;           /* Nicht volle Breite */
+        min-width: 200px;      /* Mindestbreite */
+        max-width: 100%;       /* Nicht größer als Container */
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <a href="../index.html"><img src="../img/parador_logo_weiß.svg" id="logo"
+                               alt="Logo des Hotels Parador"/></a>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="zimmer.html">Zimmer</a></li>
+      <li><a tabindex="0" aria-current="page">Erleben</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Aktiv auf La Gomera</h1>
+  </section>
+  <!-- Kontaktformular (neu eingefügt) -->
+  <section>
+    <h3>Kontaktformular</h3>
+    <p>Bitte füllen Sie das Formular aus, wir melden uns bald zurück.</p>
+
+    <form action="#" method="post">
+      <fieldset class="anfrage-box">
+        <legend>IHRE ANFRAGE</legend>
+
+        <!-- Betreff als eigene Zeile OBERHALB des Grids -->
+        <div class="betreff-group">
+          <label for="betreff"></label>
+          <select id="betreff" name="betreff">
+            <option value="allgemein">Betreff auswählen</option>
+            <option value="buchung">Buchungsanfrage</option>
+            <option value="wanderung">Wanderung</option>
+            <option value="tauchen">Tauchen & Schnorcheln</option>
+          </select>
+        </div>
+
+        <!-- Grid für Name, E-Mail, Telefon usw. -->
+        <div class="form-grid">
+          <!-- Name -->
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Ihr Name">
+
+          <!-- E-Mail -->
+          <label for="email">E-Mail-Adresse</label>
+          <input type="email" id="email" name="email" placeholder="ihre@email.de">
+
+          <!-- Telefon -->
+          <label for="telefon">Telefon</label>
+          <input type="tel" id="telefon" name="telefon" placeholder="Ihre Telefonnummer">
+
+          <!-- Nachricht mit Zeichenzähler (ersetzt die alte Nachricht) -->
+          <label for="nachricht">Ihre Nachricht</label>
+          <div style="display: flex; flex-direction: column; gap: 5px;">
+        <textarea id="nachricht" name="nachricht" maxlength="200" rows="5"
+                  placeholder="Maximal 200 Zeichen..."></textarea>
+            <small>Noch <span id="zeichenAnzahl">200</span> Zeichen übrig</small>
+          </div>
+
+          <!-- Datum Anreise (heutiges Datum automatisch) -->
+          <label for="anreise">Datum Anreise</label>
+          <input type="date" id="anreise" name="anreise">
+
+          <!-- Datum Abreise (heutiges Datum automatisch) -->
+          <label for="abreise">Datum Abreise</label>
+          <input type="date" id="abreise" name="abreise">
+
+          <!-- Button -->
+          <div></div>
+          <button type="submit">Formular senden</button>
+        </div>
+      </fieldset>
+    </form>
+    
+    <script>
+      // Zeichenzähler für Nachricht
+      const textarea = document.getElementById('nachricht');
+      const zeichenAnzahl = document.getElementById('zeichenAnzahl');
+      const maxZeichen = 200;
+
+      if (textarea) {
+          textarea.addEventListener('input', function() {
+              const verbleibend = maxZeichen - this.value.length;
+              zeichenAnzahl.textContent = verbleibend;
+
+              if (verbleibend < 20) {
+                  zeichenAnzahl.style.color = 'red';
+              } else {
+                  zeichenAnzahl.style.color = 'black';
+              }
+          });
+      }
+
+      // Heutiges Datum für Anreise und Abreise
+      const heute = new Date().toISOString().split('T')[0];
+      const anreiseFeld = document.getElementById('anreise');
+      const abreiseFeld = document.getElementById('abreise');
+
+      if (anreiseFeld) anreiseFeld.value = heute;
+      if (abreiseFeld) abreiseFeld.value = heute;
+    </script>
+  </section>
+</main>
+
+<footer>
+  <a href="#">Impressum</a>
+  <a href="#">Kontakt</a>
+  <a href="#">Datenschutz</a>
+  &copy; Hotel Parador
+</footer>
+</body>
+</html>

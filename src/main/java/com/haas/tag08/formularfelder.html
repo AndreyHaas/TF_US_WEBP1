@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: auto;
+        float: left;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    input, textarea {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 0.5rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    textarea {
+        resize: none;
+    }
+  </style>
+</head>
+<body>
+<h1>Formularfelder</h1>
+<form action="mailto:andy.haas.nsk@gmail.com" method="post">
+  <!-- action gibt an wohin das Formular verschickt werden soll. method=post Daten werden Hintergrund übertragen. -->
+  <div>
+    <label for="vorname">* Vorname:</label>
+    <!-- label brauchtder Name einer Id, die wird dem input-Feld gegeben. -->
+    <input type="text" id="vorname" name="vorname" placeholder="Vorname (pflichtfeld)" required>
+  </div>
+
+  <div>
+    <label for="nachname">* Nachname:</label>
+    <input type="text" id="nachname" name="nachname" placeholder="Nachname (pflichtfeld)"
+           required>
+  </div>
+  <div>
+    <label for="email">* E-Mail:</label>
+    <input type="email" id="email" name="email" placeholder="E-Mail (pflichtfeld)" required>
+  </div>
+
+  <div>
+    <label for="telefon">* Telefon:</label>
+    <input type="tel" id="telefon" name="telefon" placeholder="Telefon (pflichtfeld)" required>
+  </div>
+
+  <div>
+    <label for="file">Datei:</label>
+    <input type="file" id="file" name="file">
+  </div>
+
+  <div>
+    <label for="password">* Passwort:</label>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <input type="password" id="password" name="password" placeholder="Passwort (Pflichtfeld)"
+             required>
+      <i class="far fa-eye" id="togglePassword" style="cursor: pointer;"></i>
+    </div>
+  </div>
+
+  <script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+
+    togglePassword.addEventListener('click', function() {
+    // Typ zwischen password und text umschalten
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+
+    // Auge-Icon ändern (offen/geschlossen)
+    this.classList.toggle('fa-eye-slash');
+    this.classList.toggle('fa-eye');
+});
+  </script>
+
+  <div>
+    <label for="datum">Datum auswählen:</label>
+    <input type="date" id="datum" name="datum">
+  </div>
+
+  <script>
+    document.getElementById('datum').value = new Date().toISOString().split('T')[0];
+  </script>
+
+  <div>
+    <label for="nachricht">Nachricht:</label>
+    <br>
+    <textarea id="nachricht" name="nachricht" maxlength="200" rows="5" cols="50"
+              placeholder="Maximal 200 Zeichen..."></textarea>
+    <br>
+    <small>Noch <span id="zeichenAnzahl">200</span> Zeichen übrig</small>
+  </div>
+
+  <script>
+    const textarea = document.getElementById('nachricht');
+    const zeichenAnzahl = document.getElementById('zeichenAnzahl');
+    const maxZeichen = 200;
+
+    textarea.addEventListener('input', function() {
+        const verbleibend = maxZeichen - this.value.length;
+        zeichenAnzahl.textContent = verbleibend;
+        
+        // Optional: Farbe bei wenigen Zeichen ändern
+        if (verbleibend < 20) {
+            zeichenAnzahl.style.color = 'red';
+        } else {
+            zeichenAnzahl.style.color = 'black';
+        }
+    });
+  </script>
+
+  <div>
+    <label for="extras">Bitte auswählen:</label>
+    <label><input type="checkbox" name="extras" value="balkon">Balkon</label>
+    <label><input type="checkbox" name="extras" value="meerblick">Meerblick</label>
+    <label><input type="checkbox" name="extras" value="Frühstück">Frühstück</label>
+  </div>
+
+  <div>
+    <label for="zimmer">Bitte auswählen:</label>
+    <label><input type="radio" name="zimmer" value="einzelzimmer">Standard</label>
+    <label><input type="radio" name="zimmer" value="doppelzimmer">Meerblick</label>
+    <label><input type="radio" name="zimmer" value="suite">Superior</label>
+  </div>
+
+  <div>
+    <label for="betreff">Ihre Anfrage</label>
+    <select name="betreff" id="betreff">
+      <option disabled selected>Betreff wählen</option>
+      <option value="buchungsanfrage">Buchungsanfrage</option>
+      <option value="frage">Ich habe eine Frage zum Hotel</option>
+      <option value="anreise">Mitteilung zur Anreise</option>
+    </select>
+  </div>
+
+  <button type="submit">Formular absenden</button>
+</form>
