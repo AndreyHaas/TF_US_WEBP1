@@ -8,79 +8,8 @@
       content="Urlaub auf La Gomera im Hotel Parador. Das komfortable Hotel präsentiert sich mit idyllischen Innenhöfen, einladenden Aufenthaltsräumen, subtropischer Gartenanlage und mit einem grandiosem Panoramapool."
   />
   <title>Erleben Hotel Parador</title>
-  <link rel="stylesheet" href="../CSS/style.css"/>
-  <link rel="stylesheet" href="../CSS/fonts.css">
-  <style>
-    .anfrage-box {
-        border: 1px solid #ccc;
-        padding: 20px;
-    }
-
-    legend {
-        font-weight: lighter;
-        font-size: 15px;
-        padding: 0 10px;
-        width: auto;
-        margin-left: 10px;
-    }
-
-    .betreff-group {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        margin-bottom: 15px;
-        max-width: 150px;
-    }
-
-    .betreff-group select {
-        padding: 8px;
-        border: 1px solid black;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .form-grid {
-        display: grid;
-        grid-template-columns: 150px 1fr;
-        gap: 15px 10px;
-        align-items: start;
-    }
-
-    .form-grid input,
-    .form-grid textarea {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid black;
-        box-sizing: border-box;
-    }
-
-    .form-grid textarea {
-        resize: vertical;
-    }
-
-    button {
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 14px;
-        cursor: pointer;
-        width: auto;
-        justify-self: start;
-    }
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    .form-grid select {
-        width: auto;           /* Nicht volle Breite */
-        min-width: 200px;      /* Mindestbreite */
-        max-width: 100%;       /* Nicht größer als Container */
-        padding: 8px;
-        border: 1px solid #ccc;
-    }
-  </style>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/formular.css"/>
 </head>
 
 <body>
@@ -114,7 +43,7 @@
         <div class="betreff-group">
           <label for="betreff"></label>
           <select id="betreff" name="betreff">
-            <option value="allgemein">Betreff auswählen</option>
+            <option value="allgemein" hidden>Betreff auswählen</option>
             <option value="buchung">Buchungsanfrage</option>
             <option value="wanderung">Wanderung</option>
             <option value="tauchen">Tauchen & Schnorcheln</option>
@@ -124,32 +53,32 @@
         <!-- Grid für Name, E-Mail, Telefon usw. -->
         <div class="form-grid">
           <!-- Name -->
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Ihr Name">
+          <label for="name">* Name</label>
+          <input type="text" id="name" name="name" placeholder="Ihr Name" required>
 
           <!-- E-Mail -->
-          <label for="email">E-Mail-Adresse</label>
-          <input type="email" id="email" name="email" placeholder="ihre@email.de">
+          <label for="email">* E-Mail-Adresse</label>
+          <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
 
           <!-- Telefon -->
           <label for="telefon">Telefon</label>
           <input type="tel" id="telefon" name="telefon" placeholder="Ihre Telefonnummer">
 
           <!-- Nachricht mit Zeichenzähler (ersetzt die alte Nachricht) -->
-          <label for="nachricht">Ihre Nachricht</label>
+          <label for="nachricht">* Ihre Nachricht</label>
           <div style="display: flex; flex-direction: column; gap: 5px;">
         <textarea id="nachricht" name="nachricht" maxlength="200" rows="5"
-                  placeholder="Maximal 200 Zeichen..."></textarea>
+                  placeholder="Maximal 200 Zeichen..." required></textarea>
             <small>Noch <span id="zeichenAnzahl">200</span> Zeichen übrig</small>
           </div>
 
           <!-- Datum Anreise (heutiges Datum automatisch) -->
-          <label for="anreise">Datum Anreise</label>
-          <input type="date" id="anreise" name="anreise">
+          <label for="anreise">* Datum Anreise</label>
+          <input type="date" id="anreise" name="anreise" required>
 
           <!-- Datum Abreise (heutiges Datum automatisch) -->
-          <label for="abreise">Datum Abreise</label>
-          <input type="date" id="abreise" name="abreise">
+          <label for="abreise">* Datum Abreise</label>
+          <input type="date" id="abreise" name="abreise" required>
 
           <!-- Button -->
           <div></div>
